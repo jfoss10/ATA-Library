@@ -1,8 +1,8 @@
+import java.math.BigDecimal;
 
-public interface Checkoutable {
+public interface Checkoutable extends LibraryMaterial {
 
     public int getCheckoutPeriod();
-    public Checkout checkOutItem(Visitor visitor);
     public int getGracePeriod();
-    public Checkout returnItem(Visitor visitor);
+    public BigDecimal getLateFee();
 }
